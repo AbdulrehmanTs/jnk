@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" type="text/css" href="./slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick-theme.css"> 
+   
+     
+  <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px  0px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+<!-- magnific-popup css cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  
+    <title>AZIM</title>
+  </head>
+  <body>
+    <section class="relative max-w-screen-[1440px] mx-auto">
+      <div
+        class="container w-[100%] w-10/12 flex bg-[#71B100] mx-auto justify-between items-center p-[20px] absolute z-[999] mt-[5%] left-[9%] "
+      >
+        <div class="w-[20%] ml-[20px]">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="w-[60%] hide md:block">
+          <ul class="flex justify-around">
+            <a href="index.html"><li class="font-regular uppercase text-[#FFFFFF] text-[16px] leading-[30px]">
+              Home
+            </li></a>
+            <a href="gallery.html"><li
+              class="font-regular text-[#FFFFFF] text-[16px] relative leading-[30px] uppercase"
+            >
+              Gallery
+              
+            </li></a>
+            <a href="about.html"><li class="font-regular text-[#FFFFFF] text-[16px] leading-[30px] uppercase">
+              About
+            </li></a>
+            <a href="blog.html"><li class="font-regular text-[#FFFFFF] text-[16px] leading-[30px] uppercase">
+              Blog
+            </li></a>
+
+            <a href="services.html"><li class="font-regular text-[#FFFFFF] text-[16px] leading-[30px] uppercase">
+              Our Services
+            </li></a>
+            
+
+            
+            
+          </ul>
+        </div>
+      </div>
+
+      <div  class=" container w-[100%] w-10/12 flex gap-y-[15px] bg-[#71B100] mx-auto justify-between items-center p-[20px] absolute z-[999] mt-[5%] left-[9%] block md:hidden flex-col">
+        <div class="topnav">
+        <div class="w-[100%]  m-auto flex items-center justify-center">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="w-[100%] m-auto flex items-center justify-center">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa-solid fa-bars text-[30px] text-[#fff] relative mt-[1rem]" ></i> </a>
+        <div id="myLinks" class="absolute w-[100%] h-[111sspx] bg-[#fff] top-[97%] ">
+          <ul class="flex justify-between flex-col items-center  ">
+            <li class="font-regular text-[#222222] text-[16px] leading-[30px] border-b-[1px] border-[#71B100] w-[100%] flex justify-center items-center m-auto hover:bg-[#71B100] hover:text-[#fff] py-[3px] duration-300">
+              <a href="index.html">Home</a>
+
+            </li>
+           <li
+            class="font-regular text-[#222222] text-[16px] leading-[30px] border-b-[1px] border-[#71B100] w-[100%] flex justify-center items-center m-auto hover:bg-[#71B100] hover:text-[#fff] py-[3px] duration-300"
+            >
+         <a href="gallery.html">Gallery</a>
+
+              
+            </li>
+            <li class="font-regular text-[#222222] text-[16px] leading-[30px] border-b-[1px] border-[#71B100] w-[100%] flex justify-center items-center m-auto hover:bg-[#71B100] hover:text-[#fff] py-[3px] duration-300 ">
+              <a href="about.html">About</a>
+            </li>
+            <li class="font-regular text-[#222222] text-[16px] leading-[30px] border-b-[1px] border-[#71B100] w-[100%] flex justify-center items-center m-auto hover:bg-[#71B100] hover:text-[#fff] py-[3px] duration-300 ">
+                <a href="blog.html">Blog</a>
+              </li>
+              <li class="font-regular text-[#222222] text-[16px] leading-[30px] border-b-[1px] border-[#71B100] w-[100%] flex justify-center items-center m-auto hover:bg-[#71B100] hover:text-[#fff] py-[3px] duration-300 ">
+                <a href="Services.html">Services</a>
+              </li>
+
+              <li class="font-regular text-[#222222] text-[16px] leading-[30px] border-b-[1px] border-[#71B100] w-[100%] flex justify-center items-center m-auto hover:bg-[#71B100] hover:text-[#fff] py-[3px] duration-300 ">
+                <a href="FAQ.html">FAQ</a>
+              </li>
+       
+           
+            
+          </ul>
+        </div>
+      </div>
+        </div>
+        </div>
+  
+    </section>
+
+  <section class="max-w-screen-[1440px] mx-auto " >
+    <div class=" w-12/12 m-auto ">
+        <div class="w-[100%] m-auto relative">
+            <img src="./images/background-3.jpg" alt="" class="w-[100%] h-[40vh] lg:h-[70vh] object-cover">
+            <div class="w-[44%] sm:w-[30%] m-auto  absolute bottom-[0] left-[29%] sm:left-[37%] text-center mb-[-30px]">
+                <h2 class="font-regular text-[20px] sm:text-[30px] leading-[40px] text-[#fff] h-[70px] p-[14px]  bg-[#71B100]">ABOUT US</h2>
+                </div>
+        </div>
+        
+            </div>
+    </section>
+
+
+
+    <section class="max-w-screen-[1440px] mx-auto mt-20 mb-10 " >
+        <div class="container w-10/12 m-auto ">
+          <div class="w-[100%] sm:w-[60%] m-auto py-[4rem]">
+          <h2 class="font-regular text-[25px] leading-[35px] sm:text-[30px] sm:leading-[40px] text-[#222222] text-center">WHO WE ARE</h2>
+          <p class="font-light text-[13px] leading-[20px] sm:text-[15px] sm:leading-[24px] text-[#888888] text-center">Few word argue that, ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+            excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            </p>
+          </div>
+          </div>
+
+          <div class="container w-10/12 m-auto ">
+            <div class="w-[100%] flex justify-between flex-wrap gap-y-[30px] md:gap-y-[0px]">
+              <div class="w-[100%] md:w-[48%] lg:w-[32%] relative hResult ">
+                <div class="overflow-hidden relative">
+                <img src="./images/who-1.jpg" alt="" class="grow w-[100%]">
+                
+              </div>
+
+                
+               
+                <div class=" py-4 text-center">
+                  <h4 class="font-regular text-[18px] leading-[28px] text-[#71B100] hover:text-[#222222] duration-300">LARGEST COMMUNITY                </h4>
+                    <p class="font-light text-[15px] leading-[24px] text-[#888888] ">Lorem ipsum dolor sit amet, et sectetu adipiscing elit, sed do lilae eiusmod at tempor.</p>
+                      </div>
+              </div>
+
+              
+
+              <div class="w-[100%] md:w-[48%] lg:w-[32%] relative hResult ">
+                <div class="overflow-hidden relative">
+                <img src="./images/who-2.jpg" alt="" class="grow w-[100%]">
+                
+              </div>
+
+                
+               
+                <div class="py-4 text-center">
+                  <h4 class="font-regular text-[18px] leading-[28px] text-[#71B100] hover:text-[#222222] duration-300">24 HOURS SERVICE</h4>
+                    <p class="font-light text-[15px] leading-[24px] text-[#888888] ">Lorem ipsum dolor sit amet, et sectetu adipiscing elit, sed do lilae eiusmod at tempor.</p>
+                      </div>
+              </div>
+
+              <div class="w-[100%] md:w-[48%] lg:w-[32%] relative hResult ">
+                <div class="overflow-hidden relative">
+                <img src="./images/who-3.jpg" alt="" class="grow w-[100%]">
+                
+              </div>
+
+                
+               
+                <div class=" py-4 text-center">
+                  <h4 class="font-regular text-[18px] leading-[28px] text-[#71B100] hover:text-[#222222] duration-300">LIFETIME SUPPORT</h4>
+                    <p class="font-light text-[15px] leading-[24px] text-[#888888] ">Lorem ipsum dolor sit amet, et sectetu adipiscing elit, sed do lilae eiusmod at tempor.</p>
+                      </div>
+              </div>
+            </div>
+            </div>
+
+     
+          </section>
+
+
+
+          <section class="max-w-screen-[1440px] mx-auto mt-20 mb-20 relative test-sec bg-[url('./images/testimonial-background.jpg')]  " >
+               
+            <div class="container w-10/12 m-auto relative z-[1]"> 
+              <div class="w-[100%] sm:w-[60%] m-auto py-[4rem] ">
+                <h2 class="font-regular text-[25px] leading-[35px] sm:text-[30px] sm:leading-[37px] text-[#fff] text-center z-[999]">CLIENTS TESTIMOINAL</h2>
+                <p class="font-light text-[13px] leading-[20px] sm:text-[15px] sm:leading-[24px] text-[#fff] text-center z-[999]">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                  sed quia consequuntur magni dolores eos qui ratione</p>
+                </div>
+              </div>
+
+              <div class="container w-10/12 m-auto pb-[0.5rem] sm:pb-[3rem] relative z-[1]">
+                <div class="once-time slider w-[70%] sm:w-[50%] m-auto ">
+<div class="w-[50%] m-auto flex items-center justify-between flex-col text-center">
+<img src="./images/test.png" alt="" class="w-[30%] image-w ml-[35%]">
+<h5 class="font-regular text-[13px] leading-[24px] sm:text-[18px] sm:leading-[28px] text-[#fff]">Arturito </h5>
+<p class="font-light sm:text-[14px] sm:leading-[24px] text-[#fff]">
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore 
+</p>
+</div>
+<div class="w-[50%] m-auto flex items-center justify-between flex-col text-center">
+<img src="./images/test.png" alt="" class="w-[30%] image-w ml-[35%]">
+<h5 class="font-regular text-[13px] leading-[24px] sm:text-[18px] sm:leading-[28px] text-[#fff]">Arturito </h5>
+<p class="font-light sm:text-[14px] sm:leading-[24px] text-[#fff]">
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore 
+</p>
+</div>
+<div class="w-[50%] m-auto flex items-center justify-between flex-col text-center">
+<img src="./images/test.png" alt="" class="w-[30%] image-w ml-[35%]">
+<h5 class="font-regular text-[13px] leading-[24px] sm:text-[18px] sm:leading-[28px] text-[#fff]">Arturito </h5>
+<p class="font-light sm:text-[14px] sm:leading-[24px] text-[#fff]">
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore 
+</p>
+</div>
+                </div>
+              </div>
+              </section>
+
+
+
+
+
+              <section class="max-w-screen-[1440px] mx-auto mt-20 mb-10" >
+                <div class="container w-10/12 m-auto ">
+                  <div class="w-[100%] sm:w-[60%] m-auto">
+                  <h2 class="font-regular text-[25px] leading-[35px] sm:text-[30px] sm:leading-[40px] text-[#222222] text-center">DESTIN DETAILS</h2>
+                  <p class="font-light text-[13px] leading-[20px] sm:text-[15px] sm:leading-[24px] text-[#88888] text-center">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                    sed quia consequuntur magni dolores eos qui ratione</p>
+                  </div>
+                  </div>
+                  <div class="container w-10/12 m-auto mt-10">
+                    <div class="w-[100%] m-auto flex justify-between flex-wrap m-auto gap-y-[2rem]">
+                    <div class="w-[100%] md:w-[48%] lg:w-[31%] flex gap-x-[25px]">
+                      <div>
+                        <img src="./images/icon/magic.png" alt="" class="w-[80px] h-[60px] md:w-[125px] md:h-[50px] lg:w-[170px] lg:h-[50px]">
+                      </div>
+                      <div>
+                        <h3 class="text-[#222222] font-regular text-[18px] leading-[26px] hover:text-[#71B100] hover:duration-300  ">FULLY FURNISHED</h3>
+                        <p class="font-light text-[15px] leading-[24px] text-[#88888] ">Cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
+                      </div>
+                    </div>
+              
+              
+                    <div class="w-[100%] md:w-[48%] lg:w-[31%] flex gap-x-[25px]">
+                      <div>
+                        <img src="./images/icon/roller.png" alt="" class="w-[80px] h-[60px] md:w-[125px] md:h-[50px] lg:w-[170px] lg:h-[50px]">
+                      </div>
+                      <div>
+                        <h3 class="text-[#222222] font-regular text-[18px] leading-[26px] hover:text-[#71B100] hover:duration-300  ">ROYAL TOUCH PAINT</h3>
+                        <p class="font-light text-[15px] leading-[24px] text-[#88888] ">Cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
+                      </div>
+                    </div>
+                    <div class="w-[100%] md:w-[48%] lg:w-[31%] flex gap-x-[25px]">
+                      <div>
+                        <img src="./images/icon/design-tools.png" alt="" class="w-[80px] h-[60px] md:w-[125px] md:h-[50px] lg:w-[170px] lg:h-[50px]">
+                      </div>
+                      <div>
+                        <h3 class="text-[#222222] font-regular text-[18px] leading-[26px] hover:text-[#71B100] hover:duration-300  ">LATEST INTERIOR DESIGN</h3>
+                        <p class="font-light text-[15px] leading-[24px] text-[#88888] ">Cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
+                      </div>
+                    </div>
+                    <div class="w-[100%] md:w-[48%] lg:w-[31%] flex gap-x-[25px]">
+                      <div>
+                        <img src="./images/icon/shield.png" alt="" class="w-[80px] h-[60px] md:w-[125px] md:h-[50px] lg:w-[170px] lg:h-[50px]">
+                      </div>
+                      <div>
+                        <h3 class="text-[#222222] font-regular text-[18px] leading-[26px] hover:text-[#71B100] hover:duration-300  ">NON STOP SECURITY</h3>
+                        <p class="font-light text-[15px] leading-[24px] text-[#88888] ">Cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
+                      </div>
+                    </div>
+                    <div class="w-[100%] md:w-[48%] lg:w-[31%] flex gap-x-[25px]">
+                      <div>
+                        <img src="./images/icon/leaf.png" alt="" class="w-[80px] h-[60px] md:w-[125px] md:h-[50px] lg:w-[170px] lg:h-[50px]">
+                      </div>
+                      <div>
+                        <h3 class="text-[#222222] font-regular text-[18px] leading-[26px] hover:text-[#71B100] hover:duration-300  ">LIVING INSIDE A NATURE</h3>
+                        <p class="font-light text-[15px] leading-[24px] text-[#88888] ">Cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
+                      </div>
+                    </div>
+                    <div class="w-[100%] md:w-[48%] lg:w-[31%] flex gap-x-[25px]">
+                      <div>
+                        <img src="./images/icon/design.png" alt="" class="w-[80px] h-[60px] md:w-[125px] md:h-[50px] lg:w-[170px] lg:h-[50px]">
+                      </div>
+                      <div>
+                        <h3 class="text-[#222222] font-regular text-[18px] leading-[26px] hover:text-[#71B100] hover:duration-300  ">LUXURIOUS FITTINGS</h3>
+                        <p class="font-light text-[15px] leading-[24px] text-[#88888] ">Cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                  </section>
+              
+                  <!-- <section class="max-w-screen-[1440px] mx-auto mt-20 mb-20 relative test-sec bg-[url('./images/testimonial-background.jpg')]  " >
+               
+                    <div class="container w-10/12 m-auto relative z-[1] flex flex-wrap justify-between py-20 m-auto"> 
+                      <div class="w-[24%]   ">
+                      <div class="w-[70%] h-[120px] bg-[#71b100] opacity-[0.4]"> <h1 class="z-[2] text-[#fff]">ABCD</h1></div>
+                        </div>
+                      <div class="w-[24%]  ">
+                       <h1 class="z-[2] text-[#fff]">ABCD</h1>
+                        </div>
+                      <div class="w-[24%]  ">
+                       ABCD
+                        </div>
+                      <div class="w-[24%]  ">
+                       ABCD
+                        </div>
+                      </div>
+                      </section> -->
+
+
+
+
+
+
+
+                      <section class="max-w-screen-[1440px] mx-auto mt-20 mb-10 " >
+                        <div class="container w-10/12 m-auto ">
+                          <div class="w-[100%] sm:w-[60%] m-auto py-[4rem]">
+                          <h2 class="font-regular text-[25px] leading-[35px] sm:text-[30px] sm:leading-[40px] text-[#222222] text-center">OUR AGENT</h2>
+                          <p class="font-light text-[13px] leading-[20px] sm:text-[15px] sm:leading-[24px] text-[#888888] text-center">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                            sed quia consequuntur magni dolores eos qui ratione</p>
+                          </div>
+                          </div>
+                          <div class="container w-10/12 m-auto ">
+                            <div class="w-[100%] flex justify-between flex-wrap gap-y-[20px] md:gap-y-[10px] gap-x-[50px] md:gap-x-[20px] lg:gap-x-[0px] ">
+                              <div class="w-[100%] md:w-[48%] lg:w-[22%] relative hResult ">
+                                <div class="overflow-hidden">
+                                <img src="./images/alvis.jpg" alt="" class="grow w-[100%]"></div>
+          
+                                <div class="icons absolute top-[0] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-dribbble  text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[10%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-behance text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[20%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-twitter text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[30%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-facebook text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="text-center py-4 color-change">
+                                  <h4 class="font-regular text-[30px] leading-[40px] text-[#222222] ">Alvis Milan</h4>
+                                    <p class="font-light text-[15px] leading-[24px] text-[#88888] ">Director</p>
+                                      </div>
+                              </div>
+          
+                              <div class="w-[100%] md:w-[48%] lg:w-[22%] relative hResult ">
+                                <div class="overflow-hidden">
+                                <img src="./images/john.jpg" alt="" class="grow w-[100%]"></div>
+          
+                                <div class="icons absolute top-[0] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-dribbble  text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[10%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-behance text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[20%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-twitter text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[30%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-facebook text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="text-center py-4 color-change">
+                                  <h4 class="font-regular text-[30px] leading-[40px] text-[#222222] ">Alvis Milan</h4>
+                                    <p class="font-light text-[15px] leading-[24px] text-[#88888] ">Director</p>
+                                      </div>
+                              </div>
+          
+                              <div class="w-[100%] md:w-[48%] lg:w-[22%] relative hResult ">
+                                <div class="overflow-hidden">
+                                <img src="./images/hugo.jpg" alt="" class="grow w-[100%]"></div>
+          
+                                <div class="icons absolute top-[0] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-dribbble  text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[10%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-behance text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[20%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-twitter text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[30%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-facebook text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="text-center py-4 color-change">
+                                  <h4 class="font-regular text-[30px] leading-[40px] text-[#222222] ">Alvis Milan</h4>
+                                    <p class="font-light text-[15px] leading-[24px] text-[#88888] ">Director</p>
+                                      </div>
+                              </div>
+          
+                              <div class="w-[100%] md:w-[48%] lg:w-[22%] relative hResult ">
+                                <div class="overflow-hidden">
+                                <img src="./images/jenny.jpg" alt="" class="grow w-[100%]"></div>
+          
+                                <div class="icons absolute top-[0] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-dribbble  text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[10%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-behance text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[20%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-twitter text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="icons absolute top-[30%] right-[0] w-[40px] h-[40px] md:w-[30px] md:h-[30px] bg-[#71B100] ">
+                                  <i class="fa-brands fa-facebook text-[#f7f7f7] text-center p-[12px] md:p-[7px]"></i>
+                                </div>
+                                <div class="text-center py-4 color-change">
+                                  <h4 class="font-regular text-[30px] leading-[40px] text-[#222222] ">Alvis Milan</h4>
+                                    <p class="font-light text-[15px] leading-[24px] text-[#88888] ">Director</p>
+                                      </div>
+                              </div>
+                            </div>
+                            </div>
+                          </section>
+          
+
+                      <section class="max-w-screen-[1440px] mx-auto  bg-[#f7f7f7]" >
+                        <div class="container w-12/12 m-auto pt-20 pb-15">
+                          <div class="w-[100%] flex justify-between flex-col md:flex-row flex-wrap gap-y-[0px] md:gap-y-[50px] pl-[40px] gap-y-[40px] md:gap-y-[0px] ">
+                            <div class="w-[100%] md:w-[48%] lg:w-[24%] flex flex-col ">
+                              <h3 class="font-regular text-[18px] leading-[28px] text-[#222222] mb-6">About</h3>
+                              <p class="font-light text-[15px] leading-[24px] text-[#888888] mb-6">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos rem ipsum quia dolor sit amet, consectetur.</p>
+            <div class="flex items-center gap-x-[10px] mb-4"><i class="fa-solid fa-phone text-[#b7aca3] text-[15px] leading-[24px]"></i><h5 class="font-regular text-[14px] leading-[28px] text-[#b7aca3]">Phone:</h5><p class="font-light text-[14px] leading-[28px] text-[#b7aca3]">+ 844 123 456 78 90</p></div>
+            <div class="flex  gap-x-[10px] mb-4"><i class="fa-solid fa-location-dot text-[#b7aca3] text-[15px] leading-[24px]"></i><h5 class="font-regular text-[14px] leading-[28px] text-[#b7aca3]">Add:</h5><p class="font-light text-[14px] leading-[28px] text-[#b7aca3]">123 Third Street Fifth Avenue, Manhattan, New York, USA</p></div>
+            <div class="flex  gap-x-[10px] mb-4"><i class="fa-solid fa-envelope text-[#b7aca3] text-[15px] leading-[24px]"></i><h5 class="font-regular text-[14px] leading-[28px] text-[#b7aca3]">Email:</h5><p class="font-light text-[14px] leading-[28px] text-[#b7aca3]"> contact@company.com</p></div>
+            
+                            </div>
+                            <div class="w-[100%] md:w-[48%] lg:w-[24%] p-[0px] lg:pl-[20px]"> <h3 class="font-regular text-[18px] leading-[28px] text-[#222222] mb-6">Recent News</h3>
+                            <div class="mb-6">
+                              <p class="font-light text-[14px] leading-[28px] text-[#71B100]">5 Minutes Ago</p>
+                            <p class="font-light text-[14px] leading-[28px] text-[#b7aca3] hover:text-[#71B100]">The addams Family making your way in the world.</p>
+                          </div>
+                          <div class="mb-6">
+                            <p class="font-light text-[14px] leading-[28px] text-[#71B100]">5 Minutes Ago</p>
+                          <p class="font-light text-[14px] leading-[28px] text-[#b7aca3] hover:text-[#71B100]">The addams Family making your way in the world.</p>
+                        </div>
+                        <div class="mb-6">
+                          <p class="font-light text-[14px] leading-[28px] text-[#71B100]">5 Minutes Ago</p>
+                        <p class="font-light text-[14px] leading-[28px] text-[#b7aca3] hover:text-[#71B100]">The addams Family making your way in the world.</p>
+                      </div>
+                            </div>
+                            <div class="w-[100%] md:w-[48%] lg:w-[24%] p-[0px] lg:pl-[20px]"><h3 class="font-regular text-[18px] leading-[28px] text-[#222222] mb-6">USEFULL LINKS</h3>
+                            <div class="flex gap-x-[10px] items-center mb-5"><i class="fa-solid fa-circle-arrow-right text-[#888888] text-[15px] leading-[24px]"></i><p class="font-light text-[14px] leading-[28px] text-[#b7aca3] hover:text-[#71B100] duration-300">Home</p></div>
+                            <div class="flex gap-x-[10px] items-center mb-5"><i class="fa-solid fa-circle-arrow-right text-[#888888] text-[15px] leading-[24px]"></i><p class="font-light text-[14px] leading-[28px] text-[#b7aca3] hover:text-[#71B100] duration-300">About Us</p></div>
+                            <div class="flex gap-x-[10px] items-center mb-5"><i class="fa-solid fa-circle-arrow-right text-[#888888] text-[15px] leading-[24px]"></i><p class="font-light text-[14px] leading-[28px] text-[#b7aca3] hover:text-[#71B100] duration-300">Properties</p></div>
+                            <div class="flex gap-x-[10px] items-center mb-5"><i class="fa-solid fa-circle-arrow-right text-[#888888] text-[15px] leading-[24px]"></i><p class="font-light text-[14px] leading-[28px] text-[#b7aca3] hover:text-[#71B100] duration-300">Testimonials</p></div>
+                            <div class="flex gap-x-[10px] items-center mb-5"><i class="fa-solid fa-circle-arrow-right text-[#888888] text-[15px] leading-[24px]"></i><p class="font-light text-[14px] leading-[28px] text-[#b7aca3] hover:text-[#71B100] duration-300">Faq & Support</p></div>
+                            <div class="flex gap-x-[10px] items-center mb-5"><i class="fa-solid fa-circle-arrow-right text-[#888888] text-[15px] leading-[24px]"></i><p class="font-light text-[14px] leading-[28px] text-[#b7aca3] hover:text-[#71B100] duration-300">Contact Us</p></div>
+                           
+                            </div>
+                            <div class="w-[100%] md:w-[48%] lg:w-[24%]"><h3 class="font-regular text-[18px] leading-[28px] text-[#222222] mb-6">Newslatters</h3>
+                            <div class="flex flex-col gap-y-[20px] mb-6">
+                              <input placeholder="Name" class="w-[80%] lg:w-[240px] h-[40px] rounded">
+                              <input placeholder="Email" class="w-[80%] lg:w-[240px] h-[40px] rounded">
+                              <button class="w-[80%] lg:w-[240px] h-[40px] bg-[#71B100] text-[#fff] rounded">Subscribe Now</button>
+                            </div>
+                            <div class="w-[100%] flex items-center gap-x-[15px]  mb-10 md:mb-[0px]">
+                              <i class="fa-brands fa-facebook-f w-[30px] h-[30px] bg-[#71B100] text-[#fff] rounded-[50%] pt-[6px] pl-[10px]"></i>
+                              <i class="fa-brands fa-twitter w-[30px] h-[30px] bg-[#71B100] text-[#fff] rounded-[50%] pt-[7px] pl-[8px]"></i>
+                              <i class="fa-brands fa-google-plus-g w-[30px] h-[30px] bg-[#71B100] text-[#fff] rounded-[50%] pt-[6px] pl-[7px]"></i>
+                              <i class="fa-brands fa-pinterest-p w-[30px] h-[30px] bg-[#71B100] text-[#fff] rounded-[50%] pt-[7px] pl-[8px]"></i>
+                              <i class="fa-brands fa-dribbble w-[30px] h-[30px] bg-[#71B100] text-[#fff] rounded-[50%] pt-[7px] pl-[6px]"></i>
+                            </div>
+                            </div>
+            
+                          </div>
+                          </div>
+                          </section>
+                          <section class="max-w-screen-[1440px] mx-auto  py-6 bg-[#e9e9e9]" >
+                            <div class="container w-10/12 m-auto ">
+                              <h5 class="text-center font-light text-[14px] leading-[28px] text-[#777777]">© Copyrights 2018 Destin. All Rights Reserved</h5>
+                                </div>
+                                </section>
+            
+
+
+
+                    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+                    <script src="./slick.js" type="text/javascript" charset="utf-8"></script>
+                    
+                    <script>
+                      function myFunction() {
+                        var x = document.getElementById("myLinks");
+                        if (x.style.display === "block") {
+                          x.style.display = "none";
+                        } else {
+                          x.style.display = "block";
+                        }
+                      }
+                      </script>
+
+                    <script class="text/javascript">
+                        $(document).on('ready', function() {
+                        $(".vertical-center-4").slick({
+                          dots: true,
+                          vertical: true,
+                          centerMode: true,
+                          slidesToShow: 4,
+                          slidesToScroll: 2
+                        });
+                        $(".vertical-center-3").slick({
+                          dots: true,
+                          vertical: true,
+                          centerMode: true,
+                          slidesToShow: 3,
+                          slidesToScroll: 3
+                        });
+                        $(".vertical-center-2").slick({
+                          dots: true,
+                          vertical: true,
+                          centerMode: true,
+                          slidesToShow: 2,
+                          slidesToScroll: 2
+                        });
+                        $(".vertical-center").slick({
+                          dots: true,
+                          vertical: true,
+                          centerMode: true,
+                        });
+                        $(".vertical").slick({
+                          dots: true,
+                          vertical: true,
+                          slidesToShow: 3,
+                          slidesToScroll: 3
+                        });
+                        $(".regular").slick({
+                          dots: true,
+                          infinite: true,
+                          slidesToShow: 3,
+                          slidesToScroll: 3
+                        });
+                        $(".center").slick({
+                          dots: true,
+                          infinite: true,
+                          centerMode: true,
+                          slidesToShow: 5,
+                          slidesToScroll: 3
+                        });
+                        $(".variable").slick({
+                          dots: true,
+                          infinite: true,
+                          variableWidth: true
+                        });
+                        $(".lazy").slick({
+                          lazyLoad: 'ondemand', // ondemand progressive anticipated
+                          infinite: true
+                        });
+                        
+                  $('.once-time').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    adaptiveHeight: true,
+                    prevArrow: false,
+                    nextArrow: false
+                    
+                  });
+                  
+                      });
+                </script>
+                
+
+
+
+</body>
+</html>
